@@ -1,35 +1,52 @@
 .clear {
-    background-image: url(img/clear.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('img/clear.jpg');
     background-size: cover;
 }
 .clouds {
-    background-image: url(img/cloudysky.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('img/cloudysky.jpg');
     background-size: cover;
 }
 .rain {
-    background-image: url(img/rain.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('img/rain.jpg');
     background-size: cover;
 }
 .snow {
-    background-image: url(img/snow.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('img/snow.jpg');
+    background-size: cover;
+}
+.fog {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('img/mist.jpg');
+    background-size: cover;
+}
+.mist {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('img/mist.jpg');
+    background-size: cover;
+}
+.drizzle {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('img/drizzle.jpg');
     background-size: cover;
 }
 
 body {
     font-family: 'Trebuchet MS';
     text-align: center;
-    height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f70000;
+    /* color: #f70000; */
 }
-
+u {
+    margin-right: 15px;
+}
 
 h1 {
     font-size: 3em;
     position: relative;
+}
+#ville:hover {
+    cursor: pointer;
+    background-color: rgb(73, 73, 221);
 }
 
 i.wi {
@@ -57,4 +74,36 @@ h2 {
 h1:hover .tooltip {
     top: -50px;
     opacity: 1;
+}
+
+p#conditions {
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+#ville {
+    color : rgb(255, 255, 255);
+}
+
+.lowFontSize {
+    font-size: 0.6em;
+}
+.redColor {
+    color: red;
+}
+u {
+    color: white;
+}
+.wi {
+    color: white;
+}
+#container {
+    height: 31em;
+}
+.marginRight {
+    margin-right: 10px;
+}
+#wPlusTwo {
+    margin-right: 20px;
+    margin-left: 10px;
 }
